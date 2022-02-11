@@ -26,7 +26,8 @@ class Ostoskori:
 
     def poista_tuote(self, poistettava: Tuote):
         # poistaa tuotteen
-        pass
+        ostos = [ostos for ostos in self.ostoslista if ostos.tuotteen_nimi() == poistettava.nimi()]
+        ostos[0].muuta_lukumaaraa(-1)
 
     def tyhjenna(self):
         pass
