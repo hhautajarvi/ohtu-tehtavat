@@ -32,7 +32,7 @@ class Ostoskori:
             self.ostoslista.remove(ostos[0])
 
     def tyhjenna(self):
-        pass
+        self.ostoslista = []
         # tyhjentää ostoskorin
 
     def ostokset(self):
